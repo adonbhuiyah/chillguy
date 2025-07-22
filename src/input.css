@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flexBothCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .addGradientBorder {
+    @apply outline-dashed outline-1 outline-transparent;
+    background-image: linear-gradient(120deg, #22c55e, #38bdf8);
+    background-clip: border-box;
+  }
+  .navbarSocialLink {
+    @apply text-green-600 transition duration-300 hover:rotate-[20deg] hover:scale-150;
+  }
+  .heroBtn {
+    @apply cursor-pointer rounded-md bg-gradient-to-tr from-[#22c55e] to-[#38bdf8] px-4 py-2 text-[12px] font-medium text-white transition duration-300 hover:scale-125 sm:px-6 sm:py-3 sm:text-xs sm:font-semibold md:px-8 md:py-4 md:text-xl md:font-bold mobile:text-[10px] mobile:hover:scale-100 mobile:hover:border mobile:hover:border-black;
+  }
+
+  #multiChillGuy {
+    @apply mt-16 flex h-[60px] w-full select-none items-center justify-center gap-8 overflow-hidden scroll-smooth whitespace-nowrap bg-green-500 text-lg font-semibold text-white sm:mt-52 sm:text-2xl md:mt-20 md:h-[70px] lg:mt-28 xl:mt-16 xl:text-2xl 2xl:mt-24 2xl:h-[80px] 2xl:text-[35px];
+  }
+
+  /*-------------------------- TOKENOMICS-------------------------------- */
+  .tokenBoxShadow {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4); /* Initial black shadow */
+  }
+
+  .tokenBoxShadow:hover {
+    box-shadow: 0 6px 6px rgba(0, 128, 0, 1);
+  }
+  .TokenomicsBox {
+    @apply tokenBoxShadow flex w-[47%] cursor-pointer flex-col items-center justify-center gap-4 rounded-lg bg-white sm:py-[100px] lg:w-[30%] xl:py-[130px] 2xl:py-[160px] mobile:w-[270px] mobile:select-none mobile:py-6;
+  }
+  .TokenomicsBoxh1 {
+    @apply text-[30px] font-bold sm:text-[35px] sm:font-semibold xl:text-[45px] 2xl:text-[60px];
+  }
+  .TokenomicsBoxh2 {
+    @apply font-medium sm:text-[23px] xl:text-[30px] 2xl:text-[35px] mobile:text-[16px];
+  }
+  #bigContractAddress {
+    @apply mx-auto mt-16 flex w-[80%] cursor-pointer items-center justify-center gap-2 rounded-2xl border border-black p-8 sm:mt-24 sm:w-[85%] sm:gap-3 sm:p-12 md:w-[90%] md:gap-4 md:p-16 md:shadow-SM md:hover:shadow-SMCOLOR lg:mt-28 lg:gap-5 lg:p-20 xl:p-24 2xl:p-28 mobile:w-[88%] mobile:gap-1 mobile:font-bold;
+    background: white;
+  }
+
+  .tokenomics {
+    @apply text-center text-[50px] font-bold tracking-wide underline decoration-4 sm:text-[60px] md:text-[70px] lg:text-[80px] lg:decoration-8 xl:text-[90px] 2xl:text-[100px] mobile:text-[35px];
+  }
+  .tokenomicsMargin {
+    @apply my-16 w-full sm:mt-[80px] md:mt-[90px] lg:mt-[100px] xl:mt-[110px] 2xl:mt-[120px] mobile:mt-12;
+  }
+
+  /*---------------------------- HOW TO BUY---------------------------------- */
+  .howToBuyBox {
+    @apply cursor-pointer rounded-lg;
+  }
+  .howToBuyBoxShadow {
+    @apply howToBuyBox tokenBoxShadow my-6 flex h-[350px] w-full items-center justify-center gap-4 bg-white px-2 sm:w-[90%] sm:gap-3 sm:px-4 md:w-[80%] md:gap-4 md:rounded-2xl md:px-5 lg:mr-10 lg:w-[43%] lg:gap-5 lg:px-6 mobile:h-[300px] mobile:gap-2 mobile:px-3;
+  }
+  .howToBuyBoxShadowH1 {
+    @apply text-[25px] font-bold tracking-wider 2xl:text-[30px] mobile:text-[20px] mobile:tracking-wide;
+  }
+  .howToBuyBoxShadowP {
+    @apply text-lg md:text-xl xl:text-2xl 2xl:text-[30px] mobile:text-[14px];
+  }
+
+  #tokenInformation {
+    @apply mt-14 flex w-full flex-wrap items-center justify-center gap-6 px-4 sm:mt-24 md:gap-8 mobile:gap-6 mobile:px-6 [&_div]:h-[150px] mobile:[&_div]:mx-auto;
+  }
+}
